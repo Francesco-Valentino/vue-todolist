@@ -76,15 +76,28 @@ createApp({
                 },
             ],
 
-            todoElement: ""
+            todoElement: "",
         }
     },
 
     methods: {
         removeTodoElement(elementIndex){
             this.todoList.splice(elementIndex, 1);
+        },
+
+        addTodoElement(){
+            if (this.todoElement !== ""){
+                this.todoList.push({"text": this.todoElement, "done": false});
+                this.todoElement = "";
+            }
+        },
+
+        invertTask(){
+            if(this.todoElement.done === false){
+                this.todoElement.done = true;
+            } else{
+                this.todoElement.done = false;
+            }
         }
-
-
     }
 }).mount("#app");

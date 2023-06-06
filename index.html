@@ -21,7 +21,7 @@
             <main>
                 <ul>
                     <li v-for="(todoElements, index) in todoList">
-                        <p v-if="!todoList[index].done">
+                        <p v-if="!todoList[index].done" @click="invertTask()">
                             {{ todoList[index].text }}
                         </p>
 
@@ -34,6 +34,11 @@
                         </span>
                     </li>
                 </ul>
+
+                <div class="inputWrapper">
+                    <input id="elementInput" type="text" v-model="todoElement">
+                    <span @click="addTodoElement()"><i class="fa-solid fa-square-plus"></i></span>
+                </div>
             </main>
         </div>
 
