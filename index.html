@@ -29,7 +29,7 @@
                             {{ todoList[index].text }}
                         </p>
 
-                        <span>
+                        <span @click="removeTodoElement(todoList[index])">
                             <i class="fa-solid fa-trash-can"></i>
                         </span>
                     </li>

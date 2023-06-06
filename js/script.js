@@ -81,8 +81,8 @@ createApp({
     },
 
     methods: {
-        removeTodoElement(){
-
+        removeTodoElement(elementIndex){
+            this.todoList.splice(elementIndex, 1);
         }
 
 
