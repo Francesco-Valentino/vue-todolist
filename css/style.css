@@ -4,7 +4,25 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: monospace;
+}
+
+h1{
+    text-align: center;
+    padding-top: 2.5rem;
+    font-size: 3rem;
+}
+
+ul{
+    padding-top: 2rem;
+    width: 45%;
+    margin: 0 auto;
+}
+
 li{
     display: flex;
     justify-content: space-between;
+    padding-top: .3rem;
+    font-size: 1.3rem;
 }
