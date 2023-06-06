@@ -25,4 +25,22 @@ li{
     justify-content: space-between;
     padding-top: .3rem;
     font-size: 1.3rem;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+li:hover{
+    background-color: darkgray;
+}
+
+li:hover p{
+    color: midnightblue;
+}
+
+li span{
+    transition: .1s linear;
+}
+
+li span:hover{
+    color: red;
 }
