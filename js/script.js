@@ -6,18 +6,18 @@ createApp({
             todoList: [
                 {
                     text: "Seguire la lezione mattutina",
-                    done: false
+                    done: true
                 },
 
                 {
                     text: "Preparare il pranzo",
-                    done: false
+                    done: true
                 },
 
 
                 {
                     text: "Pranzare",
-                    done: false
+                    done: true
                 },
 
                 {
@@ -37,7 +37,7 @@ createApp({
 
                 {
                     text: "Ponderare la sfera",
-                    done: false
+                    done: true
                 },
 
                 {
@@ -74,12 +74,17 @@ createApp({
                     text: "Addormentarsi",
                     done: false
                 },
+            ],
 
-            ]
+            todoElement: ""
         }
     },
 
     methods: {
+        removeTodoElement(){
+
+        }
+
 
     }
 }).mount("#app");

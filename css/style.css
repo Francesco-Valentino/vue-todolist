@@ -23,8 +23,8 @@ ul{
 li{
     display: flex;
     justify-content: space-between;
-    padding-top: .3rem;
-    font-size: 1.3rem;
+    padding: .3rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: .1s linear;
 }
@@ -37,6 +37,10 @@ li:hover p{
     color: midnightblue;
 }
 
+li p.taskDone{
+    text-decoration: line-through;
+}
+
 li span{
     transition: .1s linear;
 }
@@ -44,3 +48,15 @@ li span{
 li span:hover{
     color: red;
 }
+
+/* div.inputWrapper{
+    text-align: center;
+    font-size: 2rem;
+    width: 15%;
+    margin: 0 auto;
+}
+
+div.inputWrapper{
+    cursor: pointer;
+    margin-top: .5rem;
+} */

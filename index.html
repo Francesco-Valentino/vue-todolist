@@ -21,7 +21,11 @@
             <main>
                 <ul>
                     <li v-for="(todoElements, index) in todoList">
-                        <p>
+                        <p v-if="!todoList[index].done">
+                            {{ todoList[index].text }}
+                        </p>
+
+                        <p v-else class="taskDone">
                             {{ todoList[index].text }}
                         </p>
 
